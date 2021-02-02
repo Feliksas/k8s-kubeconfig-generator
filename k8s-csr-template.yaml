@@ -1,0 +1,10 @@
+apiVersion: certificates.k8s.io/v1beta1
+kind: CertificateSigningRequest
+metadata:
+  name: USER-k8s-access
+spec:
+  groups:
+  - system:authenticated
+  request: REQUEST
+  usages:
+  - client auth
